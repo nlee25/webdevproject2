@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -6,41 +6,130 @@ body {
     background-size: 50%; 
     background-position: top left; 
     background-repeat: repeat; 
+    color: black; 
+    font-family: Arial, sans-serif;
+    padding-top: 60px; 
 }
+
 
 #linklist {
     display: flex;
-    justify-content: flex-end; 
-    background-color: #333;
-    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
     width: 100%; 
     position: fixed; 
-    top: 0;
+    top: 0; 
     left: 0;
+    z-index: 1000; 
 }
 
-
 #linklist ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    list-style: none;
     display: flex;
 }
 
 #linklist li {
     margin: 0 15px;
+    list-style: none;
+}
 
 #linklist a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: white !important; 
     font-weight: bold;
+    font-size: 16px;
     padding: 10px 15px;
-    transition: 0.3s;
+    transition: color 0.3s;
+}
+
+#linklist a:hover {
+    color: lightgray; 
 }
 
 
-#linklist a:hover {
-    background-color: #555;
-    border-radius: 5px;
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 70px; 
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    text-align: center;
+    color: black;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+#wren, #wormwood {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+#wrenimage img, #wormwoodimage img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#wrenimage:hover img, #wormwoodimage img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    #linklist {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #linklist li {
+        margin: 5px 0;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #wren, #wormwood {
+        flex-direction: column;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
