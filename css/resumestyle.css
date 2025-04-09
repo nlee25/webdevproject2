@@ -133,7 +133,7 @@ body.music-page, html {
 body.music-page #linklist {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
     width: 100%; 
