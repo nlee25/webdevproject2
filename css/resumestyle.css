@@ -199,7 +199,7 @@ body.music-page .content-container {
 }
 
 
-body.music-page #wren, #wormwood {
+body.music-page #wren {
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -212,14 +212,14 @@ body.music-page #wren, #wormwood {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
 
-body.music-page #wrenimage img, #wormwoodimage img {
+body.music-page #wrenimage img{
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
-body.music-page #wrenimage:hover img, #wormwoodimage img {
+body.music-page #wrenimage:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
