@@ -1,5 +1,5 @@
 
-body {
+body.art-page, html  {
     margin: 0;
     padding: 0;
     background-image: url('../images/wallpaperdotsEX.jpg');
@@ -9,7 +9,7 @@ body {
 }
 
 
-#linklist {
+body.art-page #linklist {
     display: flex;
     justify-content: flex-end;
     background-color: #333; 
@@ -21,7 +21,7 @@ body {
 }
 
 
-#linklist ul {
+body.art-page #linklist ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,11 +29,11 @@ body {
 }
 
 
-#linklist li {
+body.art-page #linklist li {
     margin: 0 15px; 
 }
 
-#linklist a {
+body.art-page #linklist a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -43,25 +43,25 @@ body {
 }
 
 
-#linklist a:hover {
+body.art-page #linklist a:hover {
     background-color: #555;
     border-radius: 5px;
 }
 
 
-#header_image {
+body.art-page #header_image {
     width: 100%; 
     height: 80vh; 
     object-fit: cover;
     display: block;
 }
 
-img {
+body.art-page img {
     max-width: 100%;
     height: auto;
 }
 
-.center-button {
+body.art-page .center-button {
     position: absolute;
     top: 75%;
     left: 50%;
@@ -69,7 +69,7 @@ img {
     text-align: center;
 }
 
-.center-button a {
+body.art-page .center-button a {
     display: inline-block;
     padding: 15px 30px;
     font-size: 20px;
@@ -81,11 +81,11 @@ img {
     transition: background-color 0.3s ease;
 }
 
-.center-button a:hover {
+body.art-page .center-button a:hover {
     background-color: #555;
 }
 
-#topper {
+body.art-page #topper {
     position: absolute; 
     top: 100%; 
     left: 50%; 
@@ -101,11 +101,11 @@ img {
 
 
 
-#wren {
+body.art-page #wren {
     margin-top: 190px; 
 }
 
-.content-container {
+body.art-page .content-container {
     display: flex; 
     align-items: center; 
     justify-content: flex-start; 
@@ -113,18 +113,18 @@ img {
     max-width: 100%; 
 }
 
-#wren {
+body.art-page #wren {
     display: flex; 
     align-items: center; 
 }
 
-#wrenimage img {
+body.art-page #wrenimage img {
     max-width: 500px; 
     height: auto;
     display: block; 
 }
 
-.text-box {
+body.art-page .text-box {
     max-width: 50%; 
     background: white; 
     padding: 20px;
@@ -133,23 +133,23 @@ img {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-#castiel {
+body.art-page #castiel {
     display: flex; 
     align-items: center; 
 }
 
-#castielimage img {
+body.art-page #castielimage img {
     max-width: 500px; 
     height: auto; 
     display: block; 
 }
 	
-#wormwood {
+body.art-page #wormwood {
     display: flex;
     align-items: center; 
 }
 
-#wormwoodimage img {
+body.art-page #wormwoodimage img {
     max-width: 500px; 
     height: auto;
     display: block; 

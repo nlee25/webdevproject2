@@ -1,5 +1,4 @@
-/* General Styles */
-body {
+body.music-page, html {
     margin: 0;
     padding: 0;
     background-image: url('../images/wallpaperdotsEX.jpg'); 
@@ -12,7 +11,7 @@ body {
 }
 
 
-#linklist {
+body.music-page #linklist {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,19 +24,19 @@ body {
     z-index: 1000; 
 }
 
-#linklist ul {
+body.music-page #linklist ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
 }
 
-#linklist li {
+body.music-page #linklist li {
     margin: 0 15px;
     list-style: none;
 }
 
-#linklist a {
+body.music-page #linklist a {
     text-decoration: none;
     color: white !important; 
     font-weight: bold;
@@ -46,25 +45,25 @@ body {
     transition: color 0.3s;
 }
 
-#linklist a:hover {
+body.music-page #linklist a:hover {
     color: lightgray; 
 }
 
 
-h1 {
+body.music-page h1 {
     text-align: center;
     font-size: 2em;
     margin-top: 70px; 
     text-transform: uppercase;
 }
 
-h2 {
+body.music-page h2 {
     font-size: 20px;
     text-align: center;
     margin-top: 20px;
 }
 
-p {
+body.music-page p {
     max-width: 800px;
     margin: 10px auto;
     line-height: 1.6;
@@ -73,7 +72,7 @@ p {
 }
 
 
-.content-container {
+body.music-page .content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +80,7 @@ p {
 }
 
 
-#wren, #wormwood {
+body.music-page #wren, #wormwood {
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -94,41 +93,41 @@ p {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
 
-#wrenimage img, #wormwoodimage img {
+body.music-page #wrenimage img, #wormwoodimage img {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
-#wrenimage:hover img, #wormwoodimage img {
+body.music-page #wrenimage:hover img, #wormwoodimage img {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 
 
-@media (max-width: 768px) {
+body.music-page @media (max-width: 768px) {
     #linklist {
         flex-direction: column;
         text-align: center;
     }
     
-    #linklist li {
+body.music-page #linklist li {
         margin: 5px 0;
     }
 
-    .content-container {
+body.music-page .content-container {
         flex-direction: column;
         align-items: center;
     }
   
-    #wren, #wormwood {
+body.music-page #wren, #wormwood {
         flex-direction: column;
         max-width: 90%;
         text-align: center;
     }
 
-    img {
+body.music-page img {
         max-width: 100%;
         height: auto;
     }
