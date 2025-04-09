@@ -254,6 +254,7 @@ body.music-page img {
 
 
 body.art-page, html  {
+	padding-top: 60px;
     margin: 0;
     padding: 0;
     background-image: url('../images/wallpaperdotsEX.jpg');
@@ -400,8 +401,11 @@ body.art-page #castielimage img {
 	
 body.art-page #wormwood {
     display: flex;
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; 
 }
+
 
 body.art-page #wormwoodimage img {
     max-width: 500px; 
