@@ -240,13 +240,13 @@ body.music-page .content-container {
         align-items: center;
     }
   
-body.music-page #wren, #wormwood {
+body.art-page #wren, #wormwood {
         flex-direction: column;
         max-width: 90%;
         text-align: center;
     }
 
-body.music-page img {
+body.art-page img {
         max-width: 100%;
         height: auto;
     }
