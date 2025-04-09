@@ -240,7 +240,7 @@ body.music-page .content-container {
         align-items: center;
     }
   
-body.art-page #wren, #wormwood {
+body.art-page #wren, {
         flex-direction: column;
         max-width: 90%;
         text-align: center;
@@ -402,7 +402,7 @@ body.art-page #castielimage img {
 body.art-page #wormwood {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin-bottom: 40px; 
 }
 
